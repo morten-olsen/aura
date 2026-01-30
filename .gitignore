@@ -1,0 +1,10 @@
+/node_modules/
+/dist/
+/coverage/
+/.env
+/data/
+/workspace/
+
+# Config files (except example)
+/config/*.json
+!/config/example.json

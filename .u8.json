@@ -1,0 +1,25 @@
+{
+  "values": {
+    "monoRepo": false,
+    "packageVersion": "1.0.0"
+  },
+  "entries": [
+    {
+      "timestamp": "2026-01-30T18:47:42.884Z",
+      "template": "pkg",
+      "values": {
+        "monoRepo": false,
+        "packageName": "@morten-olsen/aura",
+        "packageVersion": "1.0.0"
+      }
+    },
+    {
+      "timestamp": "2026-01-30T18:47:49.013Z",
+      "template": "eslint",
+      "values": {
+        "monoRepo": false,
+        "packageVersion": "1.0.0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "type": "module",
+  "main": "src/exports.ts",
+  "scripts": {
+    "start": "node --experimental-strip-types src/main.ts",
+    "dev": "node --watch --experimental-strip-types src/main.ts",
+    "tui": "tsx src/tui/tui.ts",
+    "test:lint": "eslint",
+    "test:types": "tsc --noEmit",
+    "test:unit": "node --experimental-strip-types --test src/**/*.test.ts",
+    "test": "pnpm run test:types && pnpm run test:lint && pnpm run test:unit"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/exports.ts"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.3",
+    "@eslint/js": "9.39.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.15.29",
+    "@types/pg": "^8.16.0",
+    "@types/react": "^18.3.18",
+    "eslint": "9.39.2",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-prettier": "5.5.5",
+    "prettier": "3.8.1",
+    "tsx": "^4.19.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.54.0"
+  },
+  "name": "@morten-olsen/aura",
+  "version": "1.0.0",
+  "imports": {
+    "#root/*": "./src/*"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@langchain/core": "^1.1.17",
+    "@langchain/langgraph": "^1.1.2",
+    "@langchain/langgraph-checkpoint": "^1.0.0",
+    "@langchain/openai": "^1.2.3",
+    "@types/convict": "^6.1.6",
+    "better-sqlite3": "^12.6.2",
+    "commander": "^12.0.0",
+    "convict": "^6.2.4",
+    "fastify": "^5.7.2",
+    "fastify-type-provider-zod": "^6.1.0",
+    "ink": "^5.0.1",
+    "ink-text-input": "^6.0.0",
+    "knex": "^3.1.0",
+    "pg": "^8.18.0",
+    "react": "^18.3.1",
+    "simple-git": "^3.30.0",
+    "zod": "^4.3.6"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}

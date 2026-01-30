@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun install:*)",
+      "Bash(bun run test)",
+      "Bash(bun add:*)",
+      "Bash(bun run test:types:*)",
+      "Bash(bun remove:*)",
+      "Bash(bun run test:lint:*)",
+      "Bash(bun run test:unit:*)",
+      "Bash(timeout 5 bun run:*)",
+      "WebSearch",
+      "Bash(docker-compose up:*)",
+      "Bash(timeout 3 AURA_DATABASE_PASSWORD=aura bun run:*)",
+      "Bash(AURA_DATABASE_PASSWORD=aura timeout 3 bun run:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm rebuild:*)",
+      "Bash(pnpm run test:types:*)",
+      "Bash(pnpm run test:lint:*)",
+      "Bash(npx eslint:*)",
+      "Bash(pnpm run test:unit:*)",
+      "Bash(timeout 5 pnpm start:*)",
+      "Bash(pnpm run test:*)",
+      "WebFetch(domain:docs.langchain.com)",
+      "WebFetch(domain:langchain-ai.github.io)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:www.js-craft.io)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm exec eslint:*)",
+      "Bash(npm test:*)",
+      "Bash(pnpm test:types:*)",
+      "Bash(node --experimental-strip-types:*)",
+      "Bash(pnpm exec tsx:*)",
+      "Bash(pnpm test:lint:*)",
+      "Bash(pnpm exec prettier:*)",
+      "Bash(pnpm exec tsc:*)",
+      "Bash(git ls-remote:*)",
+      "Bash(sqlite3:*)",
+      "Bash(pnpm test:unit:*)"
+    ]
+  }
+}
